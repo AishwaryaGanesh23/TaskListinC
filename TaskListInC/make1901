@@ -1,0 +1,6 @@
+./run: 1901_main.o 1901_functions.o
+	gcc -o run 1901_main.o 1901_functions.o
+1901_main.o: 1901_main.c 1901_header.h
+	gcc -c 1901_main.c
+1901_functions.o: 1901_functions.c 1901_header.h
+	gcc -c 1901_functions.c
